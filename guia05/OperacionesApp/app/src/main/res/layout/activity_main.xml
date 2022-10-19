@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="Ingrese primer valor"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/bSumar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:hint="Ingrese segundo valor"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/bMultiplicar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et1" />
+
+    <Button
+        android:id="@+id/bSumar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="45dp"
+        android:text="sumar"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bRestar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bRestar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="48dp"
+        android:text="Restar"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bMultiplicar"
+        app:layout_constraintEnd_toEndOf="@+id/bSumar"
+        app:layout_constraintStart_toStartOf="@+id/bSumar"
+        app:layout_constraintTop_toTopOf="@+id/et1" />
+
+    <Button
+        android:id="@+id/bMultiplicar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="16dp"
+        android:text="Multiplicar"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/bDividir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et2"
+        app:layout_constraintTop_toTopOf="@+id/et2" />
+
+    <Button
+        android:id="@+id/bDividir"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="38dp"
+        android:text="Dividir"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintStart_toStartOf="@+id/bRestar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="146dp"
+        android:text="Resultado"
+        app:layout_constraintEnd_toStartOf="@+id/bDividir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
