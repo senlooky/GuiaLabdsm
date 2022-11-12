@@ -11,7 +11,19 @@
  completada al 100%
  
  ##guia 4 
- hecha al 80%
+ Completada al 90%
 
  ##guia 5
 completada al 100%
+
+ ##guia 6
+ Completada al 100%
+ 
+ ##guia 7
+ Completada al 100%
+ 
+ ##guia 8
+ Completada al 100%
+ 
+ ##guia 9 
+ Completada al 90%
