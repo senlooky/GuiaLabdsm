@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Guia06App</string>
+    <string name="conectar">Conectar</string>
+    <string name="correo">Correo</string>
+</resources>

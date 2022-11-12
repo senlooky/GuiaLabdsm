@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/conectar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/conectar"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20dp"
+ />
+
+    <EditText
+        android:id="@+id/inputusuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo"
+        android:ems="10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/conectar"
+
+        />
+
+    <EditText
+        android:id="@+id/inputcontrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_below="@+id/inputusuario"
+        />
+
+    <Button
+        android:id="@+id/boton_iniciarsesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputcontrasena"
+        android:text="Iniciar Sesion"
+        />
+
+    <TextView
+        android:id="@+id/texto_olvidaste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boton_iniciarsesion"
+        android:text="¿Olvidaste tu constraseña?"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/purple_200"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+
+</RelativeLayout>
